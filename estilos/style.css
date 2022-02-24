@@ -1,0 +1,243 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Gentium+Basic:ital@1&family=Playfair+Display&family=Roboto+Slab:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2? family= EB+Garamond & display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Gentium+Basic:ital@1&family=Playfair+Display&family=Roboto+Slab:wght@200&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Gentium+Basic:ital@1&family=Playfair+Display&family=Roboto+Slab:wght@200&display=swap');
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+header {
+  background-color: #c0c4c8;
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-height: 50px;
+}
+.header {
+  text-decoration: none;
+  color: #343f4b;
+}
+.header:hover {
+  background-color: #343f4b;
+  color: white;
+}
+header img {
+  width: 180px;
+  height: 40px;
+}
+.barra {
+  background-color: #343f4b;
+  color: white;
+  font-family: "Caveat", cursive;
+  display: flex;
+  justify-content: space-between;
+  grid-area: barra;
+  max-height: 60px;
+}
+aside {
+  background-color: #c0c4c8;
+  grid-area: menu;
+}
+.menu {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  text-decoration: none;
+  justify-content: center;
+  grid-area: menu;
+}
+ul li a {
+  text-decoration: none;
+  list-style: none;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  color: #343f4b;
+}
+
+ul li a:hover {
+  display: flex;
+  background-color: #343f4b;
+  color: white;
+}
+
+.contenido1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+h3 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.titulo {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.contenido1 img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+}
+
+.contenido2 {
+  display: flex;
+  justify-content: center;
+}
+.contenido2 img {
+  border: 1px solid black;
+  width: 160px;
+  height: 160px;
+}
+.contenido{
+  grid-area: contenido;
+  text-align: center;
+}
+.video {
+  display: flex;
+  justify-content: center;
+}
+
+.video iframe {
+  width: 160px;
+  height: 160px;
+}
+footer {
+  grid-area: footer;
+  background-color: #343f4b;
+  padding: 1em;
+  bottom: 0;
+  margin-top: auto;
+  color: white;
+}
+
+.father {
+  display: grid;
+  font-size: 16px;
+  grid-template-areas: 
+        "header"
+        "barra"
+        "menu"
+        "contenido"
+        "footer";
+}
+#firma{
+  height: 160px;
+  width: 160px;
+  padding-top: 10px; ;
+}
+.formulario {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  width: 300px;
+}
+textarea {
+  width: 300px;
+}
+#enviar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.ventas{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .ventas img{
+    height: 160px;
+    width: 160px;
+  }
+@media screen and (min-width: 480px) {
+  .father {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header     header"
+      "barra      barra"
+      "menu       menu"
+      "contenido contenido"
+      "footer     footer";
+  }
+
+  .menu {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: center;
+  }
+  ul li{
+    padding-right: 10px;
+    
+  }
+  .contenido1 img {
+    width: 160px;
+    height: 160px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .father {
+    grid-template-columns: 0.8fr 4fr;
+    grid-template-areas:
+      "header header"
+      "barra  barra"
+      "menu   contenido"
+      "footer footer";
+  }
+  .menu {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+  }
+
+  .video iframe {
+  width: 400px;
+  height: 250px;
+  display: flex;
+  float: right;
+}
+#firma{
+  height: 250px;
+  width: 400px;
+  padding-top: 20px;
+}
+.contenido2 img{
+  width: 400px;
+  height: 250px;
+}
+.ventas{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.ventas img{
+  height: 250px;
+  width: 400px;
+}
+aside{
+  min-height: 100vh;
+}
+}
