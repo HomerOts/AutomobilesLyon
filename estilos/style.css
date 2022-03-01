@@ -13,8 +13,9 @@ body {
   flex-wrap: wrap;
   min-height: 100vh;
   font-family: 'Fira Sans Condensed', sans-serif;
-  background-image: linear-gradient(0deg, rgba(242,211,133,1) 0%, rgba(241,233,217,1) 100%);
+  background-image: linear-gradient(0deg, rgba(242, 211, 133, 1) 0%, rgba(241, 233, 217, 1) 100%);
 }
+
 header {
   background-color: #c0c4c8;
   grid-area: header;
@@ -24,20 +25,24 @@ header {
   justify-content: space-between;
   align-items: flex-end;
   max-height: 50px;
-  background-image: linear-gradient(90deg, rgba(207,207,207,1) 0%, rgba(112,106,94,0.6615021008403361) 42%, rgba(187,187,187,1) 100%);
+  background-image: linear-gradient(90deg, rgba(207, 207, 207, 1) 0%, rgba(112, 106, 94, 0.6615021008403361) 42%, rgba(187, 187, 187, 1) 100%);
 }
+
 .header {
   text-decoration: none;
   color: #343f4b;
 }
+
 .header:hover {
   background-color: #343f4b;
   color: white;
 }
+
 header img {
   width: 180px;
   height: 40px;
 }
+
 .barra {
   background-color: #343f4b;
   color: white;
@@ -47,10 +52,12 @@ header img {
   grid-area: barra;
   max-height: 60px;
 }
+
 aside {
   background-color: #c0c4c8;
   grid-area: menu;
 }
+
 .menu {
   display: flex;
   flex-flow: row wrap;
@@ -62,6 +69,7 @@ aside {
   padding-left: 10px;
   padding-bottom: 10px;
 }
+
 ul li a {
   text-decoration: none;
   list-style: none;
@@ -72,6 +80,7 @@ ul li a:hover {
   display: flex;
   background-color: #343f4b;
   color: white;
+  transition: 0.5s ease all;
 }
 
 .contenido1 {
@@ -79,10 +88,12 @@ ul li a:hover {
   flex-direction: row;
   justify-content: space-evenly;
 }
+
 h3 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .titulo {
   display: flex;
   flex-flow: column wrap;
@@ -99,16 +110,18 @@ h3 {
   display: flex;
   justify-content: center;
 }
+
 .contenido2 img {
   border: 1px solid black;
   width: 160px;
   height: 160px;
 }
 
-.contenido{
+.contenido {
   grid-area: contenido;
   text-align: center;
 }
+
 .video {
   padding-top: 20px;
   display: flex;
@@ -119,6 +132,7 @@ h3 {
   width: 160px;
   height: 160px;
 }
+
 footer {
   grid-area: footer;
   background-color: #343f4b;
@@ -127,60 +141,86 @@ footer {
   margin-top: auto;
   color: white;
 }
-footer img{
-  width: 20px;
+
+footer img {
+  width: 28px;
   height: 20px;
   padding-left: 10px;
 }
-img:hover{
-  transition-property: all;
-  transition-duration: 0.8s;
+
+
+.contenido1 img:hover {
+  transition: 0.8s ease all;
   transform: scale(1.1);
 
 }
+
 .father {
   display: grid;
   font-size: 16px;
-  grid-template-areas: 
-        "header"
-        "barra"
-        "menu"
-        "contenido"
-        "footer";
+  grid-template-areas:
+    "header"
+    "barra"
+    "menu"
+    "contenido"
+    "footer";
 }
-#firma{
+
+#firma {
   height: 160px;
   width: 160px;
-  padding-top: 10px; ;
+  padding-top: 10px;
+  ;
 }
+
 .formulario {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
+
 input {
   width: 300px;
 }
+
 textarea {
   width: 300px;
 }
+
 #enviar {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
-.ventas{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 10px;
-  }
-  .ventas img{
-    height: 160px;
-    width: 160px;
-  }
+
+.ventas {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.ventas img {
+  height: 160px;
+  width: 160px;
+}
+.contenido h5{
+  color:rgb(255, 0, 0);
+  background-color: #c0c4c8;
+}
+
+.contenido p{
+  color:  #e2e2e2;
+  background-color: black;
+}
+
+.form input{ 
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 @media screen and (min-width: 480px) {
   .father {
     grid-template-columns: 1fr 1fr;
@@ -198,15 +238,18 @@ textarea {
     list-style: none;
     justify-content: center;
   }
-  ul li{
+
+  ul li {
     padding-right: 10px;
-    
+
   }
+
   .contenido1 img {
     width: 160px;
     height: 160px;
   }
 }
+
 @media screen and (min-width: 900px) {
   .father {
     grid-template-columns: 0.8fr 4fr;
@@ -216,6 +259,7 @@ textarea {
       "menu   contenido"
       "footer footer";
   }
+
   .menu {
     display: flex;
     flex-flow: column wrap;
@@ -223,36 +267,43 @@ textarea {
   }
 
   .video iframe {
-  width: 400px;
-  height: 250px;
-  display: flex;
-  float: right;
-}
-#firma{
-  height: 250px;
-  width: 400px;
-  padding-top: 20px;
-}
-.contenido2 img{
-  width: 400px;
-  height: 250px;
-}
-.ventas{
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 20px;
-}
-.ventas img{
-  height: 250px;
-  width: 400px;
-}
-aside{
-  min-height: 100vh;
-}
-.footer{
-  display: flex;
-  justify-content: space-between;
-}
+    width: 400px;
+    height: 250px;
+    display: flex;
+    float: right;
+  }
+
+  #firma {
+    height: 250px;
+    width: 400px;
+    padding-top: 20px;
+  }
+
+  .contenido2 img {
+    width: 400px;
+    height: 250px;
+  }
+
+  .ventas {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .ventas img {
+    height: 250px;
+    width: 400px;
+  }
+
+  aside {
+    min-height: 100vh;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
 }
