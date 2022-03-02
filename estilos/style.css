@@ -70,6 +70,7 @@ aside {
   padding-bottom: 10px;
 }
 
+
 ul li a {
   text-decoration: none;
   list-style: none;
@@ -216,12 +217,24 @@ textarea {
   background-color: black;
 }
 
-.form input{ 
+.form-floating input,select, button{ 
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-@media screen and (min-width: 480px) {
+#modelos .col-lg-4{
+  margin: 0;
+  padding: 25px;
+}
+#modelos img{
+  width: 100%;
+}
+#modelos img:hover{
+  transition: all ease 0.8s;
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 576px) {
   .father {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -248,6 +261,8 @@ textarea {
     width: 160px;
     height: 160px;
   }
+
+
 }
 
 @media screen and (min-width: 900px) {
@@ -259,6 +274,7 @@ textarea {
       "menu   contenido"
       "footer footer";
   }
+
 
   .menu {
     display: flex;
@@ -306,4 +322,6 @@ textarea {
     justify-content: space-between;
   }
   
+
+
 }

@@ -37,56 +37,65 @@
                 </ul>
             </nav>
         </aside>
-        <section class="contenido">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" data-bs-slide-to="0"
-                        aria-label="Slide 4"></button>
+        <section class="contenido" id="modelos">
+
+                <div> <h4>NUESTROS MODELOS</h4>
 
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../imagenes/berlingo.png" class="d-block w-100" alt="convencional">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Berlingo</h5>
-                        </div>
+
+                <div class="row">
+        
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <img src="../imagenes/c3.png" alt="c3">
                     </div>
-                    <div class="carousel-item">
-                        <img src="../imagenes/c4-lounge.png" class="d-block w-100" alt="financiaciones">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>C4 Lounge</h5>
-                        </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <img src="../imagenes/c4-lounge.png" alt="c4-lounge">
                     </div>
-                    <div class="carousel-item">
-                        <img src="../imagenes/cactusblanco.png" class="d-block w-100" alt="plandeahorro">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>C4 Cactus</h5>
-                        </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <img src="../imagenes/C4-Cactus-1.png" alt="c4cactus">
                     </div>
-                    <div class="carousel-item">
-                        <img src="../imagenes/aircross.jpg" class="d-block w-100" alt="usados">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>C5 Aircross</h5>
-                        </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <img src="../imagenes/c5-aircross-hero.png" alt="aircross">
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <img src="../imagenes/berlingo.png" alt="berlingo">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <img src="../imagenes/jumpy.png" alt="jumpy">
+                    </div>                    
                 </div>
-                </section>
+
+                <div> 
+                   <h6>Comunicate con nosotros para adquirir tu nuevo Citroën!</h6>    
+                    <div class="form-floating mb-3">
+                        <input type="name" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Nombre</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="surname" class="form-control" id="floatingPassword" placeholder="Apellido">
+                        <label for="floatingPassword">Apellido</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Celular</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="celphone" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Mail</label>
+                      </div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Seleccioná tu modelo</option>
+                        <option value="1">C3</option>
+                        <option value="2">C4 Lounge</option>
+                        <option value="3">C4 Cactus</option>
+                        <option value="4">Aircross</option>
+                        <option value="5">Berlingo</option>
+                        <option value="6">Jumpy</option>
+                      </select>
+                      <button type="submit" class="btn btn-secondary btn-sm">Enviar</button>
+                </div>
+            
+        </section>
     <footer class="footer">
         <p> Seguinos en nuestras redes
             <a href="https://www.facebook.com/LyonCitroen/">
