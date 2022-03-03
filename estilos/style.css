@@ -58,6 +58,8 @@ aside {
   padding-left: 10px;
   padding-bottom: 10px; }
 
+  ul li {
+    padding-right: 10px; }
 ul li a {
   text-decoration: none;
   list-style: none;
@@ -218,8 +220,6 @@ textarea {
     flex-flow: row wrap;
     list-style: none;
     justify-content: center; }
-  ul li {
-    padding-right: 10px; }
   .contenido1 img {
     width: 160px;
     height: 160px; } }
