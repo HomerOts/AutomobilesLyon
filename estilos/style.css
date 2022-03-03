@@ -69,19 +69,10 @@ ul li a:hover {
   color: white;
   transition: 0.5s ease all; }
 
-.contenido1{
-display: flex;
-flex-direction: row wrap;
-justify-content: space-evenly;
-}
-.contenido1 img {
-  border-radius: 50%;
-  width: 160px;
-  height: 160px; }
-
-  .contenido1 img:hover {
-    transition: 0.8s ease all;
-    transform: scale(1.1); }
+.contenido1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
 
 h3 {
   padding-top: 20px;
@@ -91,6 +82,12 @@ h3 {
   display: flex;
   flex-flow: column wrap;
   align-items: center; }
+
+.contenido1 img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px; }
+
 .contenido2 {
   display: flex;
   justify-content: center; }
@@ -103,6 +100,15 @@ h3 {
 .contenido {
   grid-area: contenido;
   text-align: center; }
+
+.video {
+  padding-top: 20px;
+  display: flex;
+  text-align: left; }
+
+.video iframe {
+  width: 160px;
+  height: 160px; }
 
 footer {
   grid-area: footer;
@@ -117,15 +123,14 @@ footer img {
   height: 20px;
   padding-left: 10px; }
 
+.contenido1 img:hover {
+  transition: 0.8s ease all;
+  transform: scale(1.1); }
 
 .father {
   display: grid;
-  font-size: 20px;
-  grid-template-areas: "header"
- "barra"
- "menu"
- "contenido"
- "footer"; }
+  font-size: 16px;
+  grid-template-areas: "header" "barra" "menu" "contenido" "footer"; }
 
 #firma {
   height: 160px;
@@ -183,35 +188,10 @@ textarea {
   transition: all ease 0.8s;
   transform: scale(1.2); }
 
-.modelos{
-  display: flex;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.video{
-  display: flex;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.contenido div{
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
 @media screen and (min-width: 576px) {
   .father {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "header     header"
- "barra      barra"
- "menu       menu"
- "contenido contenido"
- "footer     footer"; }
+    grid-template-areas: "header     header" "barra      barra" "menu       menu" "contenido contenido" "footer     footer"; }
   .menu {
     display: flex;
     flex-flow: row wrap;
@@ -226,10 +206,7 @@ textarea {
 @media screen and (min-width: 900px) {
   .father {
     grid-template-columns: 0.8fr 4fr;
-    grid-template-areas: "header header"
- "barra  barra"
- "menu   contenido"
- "footer footer"; }
+    grid-template-areas: "header header" "barra  barra" "menu   contenido" "footer footer"; }
   .menu {
     display: flex;
     flex-flow: column wrap;
