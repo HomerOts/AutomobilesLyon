@@ -11,7 +11,7 @@ body {
   flex-wrap: wrap;
   min-height: 100vh;
   font-family: 'Fira Sans Condensed', sans-serif;
-  background-image: linear-gradient(0deg, #f2d385 0%, #f1e9d9 100%);
+  background-image: linear-gradient(0deg, #eca73f 0%, #f1e9d9 100%);
 }
 
 header {
@@ -166,7 +166,6 @@ footer img {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
-  border: solid 5px orangered;
 }
 
 input {
@@ -243,13 +242,12 @@ button {
   align-items: center;
 }
 
-<<<<<<< HEAD
+.video iframe{
+  height: 300px;
+  width: 300px;
+}
 
-.contenido div{
-=======
 .contenido div {
->>>>>>> bootstrap
-  padding-top: 5px;
   padding-bottom: 5px;
 }
 
@@ -259,6 +257,10 @@ justify-content: center;
 }
 .img__form img{
   display: none;
+}
+
+.banner{
+  width: 100%;
 }
 
 @media screen and (min-width: 576px) {
@@ -275,17 +277,13 @@ justify-content: center;
     display: flex;
     flex-flow: row wrap;
     list-style: none;
-<<<<<<< HEAD
-    justify-content: center; }
-=======
-    justify-content: center;
+    justify-content: space-around;
   }
 
   ul li {
     padding-right: 10px;
   }
 
->>>>>>> bootstrap
   .contenido1 img {
     width: 160px;
     height: 160px;
@@ -299,14 +297,9 @@ justify-content: center;
     grid-template-areas:
       "header header"
       "barra  barra"
-      "menu   contenido"
+      "menu   menu"
+      "contenido contenido"
       "footer footer";
-  }
-
-  .menu {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: start;
   }
 
   .video iframe {
@@ -340,9 +333,6 @@ justify-content: center;
     width: 400px;
   }
 
-  aside {
-    min-height: 100vh;
-  }
 
   .footer {
     display: flex;
