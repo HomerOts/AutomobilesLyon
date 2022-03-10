@@ -1,335 +1,231 @@
-@import "general";
 @import "fuentes";
+@import "general";
+@import "header";
 @import "nav";
+@import "footer";
 
 
+.header:hover {
+  background-color: #343f4b;
+  color: orange;
+}
+.barra {
+  background-color: #343f4b;
+  color: white;
+  font-family: 'Alegreya', serif;
+  display: flex;
+  justify-content: space-between;
+  grid-area: barra;
+  max-height: 60px;
+}
+ul li a:hover {
+  display: flex;
+  background-color: #343f4b;
+  color: orange;
+  transition: 0.5s ease all;
+}
 
+.contenido {
+  grid-area: contenido;
+  text-align: center;
+}
 
-* {
-    padding: 0;
-    margin: 0;
-  }
-  
-  
-  @import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Fira+Sans+Condensed:wght@300&family=Montserrat:ital,wght@1,300&display=swap');
-  
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    min-height: 100vh;
-    font-family: 'Fira Sans Condensed', sans-serif;
-    background-image: linear-gradient(0deg, rgba(242, 211, 133, 1) 0%, rgba(241, 233, 217, 1) 100%);
-  }
-  
-  header {
-    background-color: #c0c4c8;
-    grid-area: header;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-end;
-    max-height: 50px;
-    background-image: linear-gradient(90deg, rgba(207, 207, 207, 1) 0%, rgba(112, 106, 94, 0.6615021008403361) 42%, rgba(187, 187, 187, 1) 100%);
-  }
-  
-  .header {
-    text-decoration: none;
-    color: #343f4b;
-  }
-  
-  .header:hover {
-    background-color: #343f4b;
-    color: white;
-  }
-  
-  header img {
-    width: 180px;
-    height: 40px;
-  }
-  
-  .barra {
-    background-color: #343f4b;
-    color: white;
-    font-family: 'Alegreya', serif;
-    display: flex;
-    justify-content: space-between;
-    grid-area: barra;
-    max-height: 60px;
-  }
-  
-  aside {
-    background-color: #c0c4c8;
-    grid-area: menu;
-  }
-  
+#firma {
+  height: 160px;
+  width: 160px;
+  padding-top: 10px;
+}
+
+.form {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+input {
+  width: 300px;
+}
+
+textarea {
+  width: 300px;
+}
+
+#enviar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.ventas {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.ventas img {
+  height: 160px;
+  width: 160px;
+}
+
+.contenido h5 {
+  color: red;
+  background-color: #c0c4c8;
+}
+
+.contenido p {
+  color: #e2e2e2;
+  background-color: black;
+}
+
+.form-floating input,
+select,
+button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#modelos .col-lg-4 {
+  margin: 0;
+  padding: 25px;
+}
+
+#modelos img {
+  width: 100%;
+}
+
+#modelos img:hover {
+  transition: all ease 0.8s;
+  transform: scale(1.2);
+}
+
+.modelos {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.video {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.video iframe{
+  height: 300px;
+  width: 300px;
+}
+
+.contenido div {
+  padding-top: 0;
+  padding-bottom: 5px;
+}
+
+.form__modelos{
+display: flex;
+justify-content: center;
+}
+.img__form img{
+  display: none;
+}
+
+.banner{
+  width: 100%;
+}
+
+.img__inicio{
+  height: 250px;
+  width: 250px;
+}
+
+@media screen and (min-width: 576px) {
+
   .menu {
     display: flex;
     flex-flow: row wrap;
     list-style: none;
-    text-decoration: none;
-    justify-content: center;
-    grid-area: menu;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
+    justify-content: space-around;
   }
-  
-  
-  ul li a {
-    text-decoration: none;
-    list-style: none;
-    color: #343f4b;
-  }
-  
-  ul li a:hover {
-    display: flex;
-    background-color: #343f4b;
-    color: white;
-    transition: 0.5s ease all;
-  }
-  
-  .contenido1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  
-  h3 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  
-  .titulo {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-  }
-  
-  .contenido1 img {
-    border-radius: 50%;
-    width: 160px;
-    height: 160px;
-  }
-  
-  .contenido2 {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .contenido2 img {
-    border: 1px solid black;
-    width: 160px;
-    height: 160px;
-  }
-  
-  .contenido {
-    grid-area: contenido;
-    text-align: center;
-  }
-  
-  .video {
-    padding-top: 20px;
-    display: flex;
-    text-align: left;
-  }
-  
-  .video iframe {
-    width: 160px;
-    height: 160px;
-  }
-  
-  footer {
-    grid-area: footer;
-    background-color: #343f4b;
-    padding: 1em;
-    bottom: 0;
-    margin-top: auto;
-    color: white;
-  }
-  
-  footer img {
-    width: 28px;
-    height: 20px;
-    padding-left: 10px;
-  }
-  
-  
-  .contenido1 img:hover {
-    transition: 0.8s ease all;
-    transform: scale(1.1);
-  
-  }
-  
+
+}
+
+
+@media screen and (min-width: 900px) {
   .father {
-    display: grid;
-    font-size: 16px;
+    grid-template-columns: 0.8fr 4fr;
     grid-template-areas:
-      "header"
-      "barra"
-      "menu"
-      "contenido"
-      "footer";
+      "header header"
+      "barra  barra"
+      "menu   menu"
+      "contenido contenido"
+      "footer footer";
   }
-  
+
+  .video iframe {
+    width: 400px;
+    height: 250px;
+    display: flex;
+    float: right;
+  }
+
   #firma {
-    height: 160px;
-    width: 160px;
-    padding-top: 10px;
-    ;
+    height: 250px;
+    width: 400px;
+    padding-top: 20px;
   }
-  
-  .formulario {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+
+  .contenido2 img {
+    width: 400px;
+    height: 250px;
   }
-  
-  input {
-    width: 300px;
-  }
-  
-  textarea {
-    width: 300px;
-  }
-  
-  #enviar {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-  
+
   .ventas {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
-  
+
   .ventas img {
-    height: 160px;
-    width: 160px;
+    height: 250px;
+    width: 400px;
   }
-  .contenido h5{
-    color:rgb(255, 0, 0);
-    background-color: #c0c4c8;
+
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
   }
-  
-  .contenido p{
-    color:  #e2e2e2;
-    background-color: black;
+
+  .formu{
+    display: flex;
+    flex-direction: row;
   }
-  
-  .form-floating input,select, button{ 
-    padding-top: 10px;
-    padding-bottom: 10px;
+
+  .form {
+    width: 50%;
   }
-  
-  #modelos .col-lg-4{
-    margin: 0;
-    padding: 25px;
+
+  .img__form{
+    width: 50%;
   }
-  #modelos img{
+  .img__form img {
+    display: flex;
     width: 100%;
+    height: 450px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  #modelos img:hover{
-    transition: all ease 0.8s;
-    transform: scale(1.2);
+
+  .img__inicio{
+    height: 350px;
+    width: 400px;
   }
-  
-  @media screen and (min-width: 576px) {
-    .father {
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas:
-        "header     header"
-        "barra      barra"
-        "menu       menu"
-        "contenido contenido"
-        "footer     footer";
-    }
-  
-    .menu {
-      display: flex;
-      flex-flow: row wrap;
-      list-style: none;
-      justify-content: center;
-    }
-  
-    ul li {
-      padding-right: 10px;
-  
-    }
-  
-    .contenido1 img {
-      width: 160px;
-      height: 160px;
-    }
-  
-  
-  }
-  
-  @media screen and (min-width: 900px) {
-    .father {
-      grid-template-columns: 0.8fr 4fr;
-      grid-template-areas:
-        "header header"
-        "barra  barra"
-        "menu   contenido"
-        "footer footer";
-    }
-  
-  
-    .menu {
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: start;
-    }
-  
-    .video iframe {
-      width: 400px;
-      height: 250px;
-      display: flex;
-      float: right;
-    }
-  
-    #firma {
-      height: 250px;
-      width: 400px;
-      padding-top: 20px;
-    }
-  
-    .contenido2 img {
-      width: 400px;
-      height: 250px;
-    }
-  
-    .ventas {
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: space-between;
-      align-items: center;
-      padding-bottom: 20px;
-    }
-  
-    .ventas img {
-      height: 250px;
-      width: 400px;
-    }
-  
-    aside {
-      min-height: 100vh;
-    }
-  
-    .footer {
-      display: flex;
-      justify-content: space-between;
-    }
-    
-  
-  
-  }
-  
+
+}

@@ -1,0 +1,26 @@
+.contenido {
+    grid-area: contenido;
+    text-align: center; 
+    h5 {
+        color: red;
+        background-color: #c0c4c8; }
+    p {
+            color: #e2e2e2;
+            background-color: black; }
+    .banner {
+                    height: 450px;
+                    width: 100%;
+            }
+    .modelos{
+                display: flex;
+                flex-flow: row wrap;
+            div{
+                a{
+                    .img__inicio{
+                        float: right;
+                }
+            }
+            }
+    }
+
+}
