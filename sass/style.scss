@@ -138,6 +138,12 @@ justify-content: center;
   width: 100%;
 }
 
+.carousel-inner img{
+  height: 400px;
+  width: 100%;
+}
+
+
 .img__inicio{
   height: 250px;
   width: 250px;
@@ -226,6 +232,9 @@ justify-content: center;
   .img__inicio{
     height: 350px;
     width: 400px;
+  }
+  .carousel-inner img{
+    height: 500px;
   }
 
 }
