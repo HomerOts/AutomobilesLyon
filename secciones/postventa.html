@@ -27,110 +27,91 @@
         </div>
 
 
-        <aside>
-            <nav>
-                <ul class="menu">
-                    <li> <a href="ventas.html">VENTAS</a> </li>
-                    <li><a href="postventa.html"> POSTVENTA</a></li>
-                    <li><a href="modelos.html">MODELOS</a> </li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
-        </aside>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">INICIO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="ventas.html">VENTAS</a></li>
+                        <a class="nav-link" href="postventa.html">POSTVENTA</a></li>
+                        <a class="nav-link" href="modelos.html">MODELOS</a> </li>
+                        <a class="nav-link" href="contacto.html">CONTACTO</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <section class="contenido">
-            <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                        data-bs-slide-to="0" aria-label="Slide 4"></button>
+            <div class="servicios">
+                <div class="recuadro"> <img src="../imagenes/service.png" alt="service">
+                    <h4>Service</h4>
+                    <p>Realizalo con los mejores especialistas de la marca</p>
+                    <button type="submit" class="btn btn-secondary btn-sm"><a href="#form2">CONSULTAR</a>
+                    </button>
+                </div>
+                <div class="recuadro"> <img src="../imagenes/repuestos.png" alt="repuestos">
+                    <h4>Repuestos</h4>
+                    <p>Directamente de fábrica en Automobiles Lyon</p>
+                    <button type="submit" class="btn btn-secondary btn-sm"><a href="#form2">CONSULTAR</a>
+                    </button>
+                </div>
+                <div class="recuadro"> <img src="../imagenes/accesorios.png" alt="Accesorios">
+                    <h4>Accesorios</h4>
+                    <p>La mejor calidad en accesorios para tu vehículo</p>
+                    <button type="submit" class="btn btn-secondary btn-sm"><a href="#form2">CONSULTAR</a>
+                    </button>
+                </div>
+                <div class="recuadro"> <img src="../imagenes/garantias (1).png" alt="usados">
+                    <h4>Garantías</h4>
+                    <p>Todos nuestros trabajos cuentan con garantías</p>
+                    <button type="submit" class="btn btn-secondary btn-sm"><a href="#form2">CONSULTAR</a>
+                    </button>
+                </div>
 
+            </div>
+
+            <article class="formu">
+                <div class="form" id="form2">
+                    <h6>Comunicate con nosotros para solicitar tus reparaciones o presupuestos!</h6>
+                    <div class="form-floating mb-3">
+                        <input type="name" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Nombre</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="surname" class="form-control" id="floatingPassword" placeholder="Apellido">
+                        <label for="floatingPassword">Apellido</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Celular</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="celphone" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Mail</label>
+                    </div>
+                    <div>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>¿Qué tipo de servicio querés realizar en tu Citroën?</option>
+                            <option value="1">Service</option>
+                            <option value="2">Repuestos</option>
+                            <option value="3">Accesorios</option>
+                            <option value="4">Garantías</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-secondary btn-sm">Enviar
+                        </button>
+                    </div>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../imagenes/aircrossalto.jpg" class="d-block w-100" alt="convencional">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Service</h5>
-                            <p>Nuestra mano de obra calificada y los sistemas adecuados de reparación hace que su
-                                vehículo se mantenga siempre original</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../imagenes/areadeexamen.jpg" class="d-block w-100" alt="financiaciones">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Repuestos</h5>
-                            <p>La mejor calidad y cotización en repuestos directos de fábrica</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../imagenes/c4dentro.jpg" class="d-block w-100" alt="plandeahorro">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Accesorios</h5>
-                            <p>Colocá tus accesorios para una mayor comodidad dentro de tu vehículo</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../imagenes/services.jpg" class="d-block w-100" alt="usados">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Garantías</h5>
-                            <p>Accedé a las mejores garantías realizando tus reparaciones con nosotros</p>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                <div class="img__form">
+                    <img src="../imagenes/berlingo.png" alt="berlingo">
                 </div>
-            </section>
-            <section class="contenido">
-                <article class="formu">
-                    <div class="form">
-                        <h6>Comunicate con nosotros para solicitar tus reparaciones o presupuestos!</h6>
-                        <div class="form-floating mb-3">
-                            <input type="name" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Nombre</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="surname" class="form-control" id="floatingPassword" placeholder="Apellido">
-                            <label for="floatingPassword">Apellido</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Celular</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="celphone" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="floatingPassword">Mail</label>
-                        </div>
-                        <div>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>¿Qué tipo de servicio querés realizar en tu Citroën?</option>
-                                <option value="1">Service</option>
-                                <option value="2">Repuestos</option>
-                                <option value="3">Accesorios</option>
-                                <option value="4">Garantías</option>
-                            </select>
-                        </div>
-                        <div>
-                            <button type="submit" class="btn btn-secondary btn-sm">Enviar
-                            </button>
-                        </div>
-                    </div>
-                    <div class="img__form">
-                        <img src="../imagenes/berlingo.png" alt="berlingo">
-                    </div>
-                </article>
-            </section>
+            </article>
+        </section>
     </div>
 
     <footer class="footer">

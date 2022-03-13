@@ -4,11 +4,14 @@
 @import "nav";
 @import "footer";
 
+/*Variables*/
+$blue: blue;
 
 .header:hover {
-  background-color: #343f4b;
+  background-color: $blue;
   color: orange;
 }
+
 .barra {
   background-color: #343f4b;
   color: white;
@@ -18,6 +21,7 @@
   grid-area: barra;
   max-height: 60px;
 }
+
 ul li a:hover {
   display: flex;
   background-color: #343f4b;
@@ -69,16 +73,6 @@ textarea {
   width: 160px;
 }
 
-.contenido h5 {
-  color: red;
-  background-color: #c0c4c8;
-}
-
-.contenido p {
-  color: #e2e2e2;
-  background-color: black;
-}
-
 .form-floating input,
 select,
 button {
@@ -116,37 +110,53 @@ button {
   align-items: center;
 }
 
-.video iframe{
+.video iframe {
   height: 300px;
   width: 300px;
 }
 
-.contenido div {
-  padding-top: 0;
-  padding-bottom: 5px;
+.form__modelos {
+  display: flex;
+  justify-content: center;
 }
 
-.form__modelos{
-display: flex;
-justify-content: center;
-}
-.img__form img{
+.img__form img {
   display: none;
 }
 
-.banner{
-  width: 100%;
-}
-
-.carousel-inner img{
-  height: 400px;
+.banner {
   width: 100%;
 }
 
 
-.img__inicio{
+.img__inicio {
   height: 250px;
   width: 250px;
+}
+
+.servicios {
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.recuadro {
+  border: solid 2px #c0c4c8;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.recuadro button a{
+  text-decoration: none;
+  color: white;
+}
+.servicios img {
+  height: 200px;
+  width: 200px;
 }
 
 @media screen and (min-width: 576px) {
@@ -161,7 +171,7 @@ justify-content: center;
 }
 
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
   .father {
     grid-template-columns: 0.8fr 4fr;
     grid-template-areas:
@@ -185,10 +195,6 @@ justify-content: center;
     padding-top: 20px;
   }
 
-  .contenido2 img {
-    width: 400px;
-    height: 250px;
-  }
 
   .ventas {
     display: flex;
@@ -209,7 +215,7 @@ justify-content: center;
     justify-content: space-between;
   }
 
-  .formu{
+  .formu {
     display: flex;
     flex-direction: row;
   }
@@ -218,9 +224,10 @@ justify-content: center;
     width: 50%;
   }
 
-  .img__form{
+  .img__form {
     width: 50%;
   }
+
   .img__form img {
     display: flex;
     width: 100%;
@@ -229,12 +236,18 @@ justify-content: center;
     padding-right: 20px;
   }
 
-  .img__inicio{
+  .img__inicio {
     height: 350px;
     width: 400px;
   }
-  .carousel-inner img{
-    height: 500px;
+
+  .servicios {
+    flex-flow: row;
+    width: 100%;
   }
 
+  .recuadro {
+
+    text-align: center;
+  }
 }
