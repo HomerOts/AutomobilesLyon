@@ -39,11 +39,6 @@ $map:(
 .seguinos h4{
 padding-top: 80px;
 }
-/*Extend*/ 
-.video {
-  @extend .modelos; 
-  padding-right: 20px;
-}
 
 /*Mixin*/
 
@@ -66,7 +61,8 @@ padding-top: 80px;
 }
 
 .barra {
-  background-color: #343f4b;
+  background: rgb(255,241,241);
+    background: linear-gradient(229deg, rgba(255,241,241,1) 12%, rgba(0,0,0,1) 18%, rgba(232,116,194,1) 33%, rgba(5,33,184,1) 58%, rgba(233,121,8,1) 64%, rgba(223,8,8,1) 87%);;
   color: white;
   font-family: 'Alegreya', serif;
   display: flex;
@@ -130,19 +126,24 @@ button {
   transform: scale(1.2);
 }
 
-.modelos {
+.c3{
   display: flex;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  justify-content: space-evenly;
-  align-items: center;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  border: solid 4px grey;
+}
+.img--c3{
+  padding-top: 20px;
+  height: 200px;
+  width: 200px;
+}
+.c3 button a{
+  bottom: 50vh;
+  text-decoration: none;
+  color: white;
 }
 
-
-.video iframe {
-  height: 300px;
-  width: 300px;
-}
 
 .form__modelos {
   display: flex;
@@ -198,6 +199,12 @@ button {
     list-style: none;
     justify-content: space-around;
   }
+  
+
+.img--c3{
+    height: 350px;
+    width: 400px;
+}
 
 }
 
@@ -213,13 +220,6 @@ button {
       "footer footer";
   }
 
-  .video iframe {
-    width: 400px;
-    height: 250px;
-    display: flex;
-    float: right;
-  }
-
   .ventas {
     display: flex;
     flex-flow: column wrap;
@@ -231,12 +231,6 @@ button {
   .ventas img {
     height: 250px;
     width: 400px;
-  }
-
-
-  .footer {
-    display: flex;
-    justify-content: space-between;
   }
 
   .formu {
@@ -274,5 +268,22 @@ button {
     width: 25%;
     text-align: center;
   }
+
+.c3{
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+  .img--c3{
+    height: 400px;
+    width: 500px;
+}
+
+.consultar{
+  padding-top: 40px;
+  justify-content: center;
+  align-content: center;
+}
+
 }
 

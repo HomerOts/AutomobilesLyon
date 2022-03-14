@@ -9,10 +9,10 @@ body {
   flex-wrap: wrap;
   min-height: 100vh;
   font-family: 'Fira Sans Condensed', sans-serif;
-  background-image: linear-gradient(0deg, #eca73f 0%, #f1e9d9 100%); }
+  background-color: white; }
 
 header {
-  background-color: #c0c4c8;
+  background-color: white;
   grid-area: header;
   display: flex;
   justify-content: space-between;
@@ -21,8 +21,7 @@ header {
   align-items: flex-end;
   max-height: 50px;
   padding-left: 5px;
-  padding-right: 10px;
-  background-image: linear-gradient(90deg, #cfcfcf 0%, rgba(112, 106, 94, 0.661502) 42%, #bbbbbb 100%); }
+  padding-right: 10px; }
   header .header {
     text-decoration: none;
     color: #343f4b; }
@@ -32,14 +31,18 @@ header {
 
 footer {
   grid-area: footer;
-  background-color: #343f4b;
+  background: #fff1f1;
+  background: linear-gradient(229deg, #fff1f1 12%, black 18%, #e874c2 33%, #0521b8 58%, #e97908 64%, #df0808 87%);
   padding: 1em;
   bottom: 0;
   margin-top: auto;
-  color: white; }
+  color: white;
+  height: 300px;
+  padding-left: 20px;
+  padding-right: 20px; }
   footer img {
-    width: 28px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     padding-left: 10px; }
 
 /*map*/
@@ -73,10 +76,6 @@ footer {
 .seguinos h4 {
   padding-top: 80px; }
 
-/*Extend*/
-.video {
-  padding-right: 20px; }
-
 /*Mixin*/
 .form {
   width: 100%;
@@ -89,7 +88,8 @@ footer {
   color: white; }
 
 .barra {
-  background-color: #343f4b;
+  background: #fff1f1;
+  background: linear-gradient(229deg, #fff1f1 12%, black 18%, #e874c2 33%, #0521b8 58%, #e97908 64%, #df0808 87%);
   color: white;
   font-family: 'Alegreya', serif;
   display: flex;
@@ -143,16 +143,22 @@ button {
   transition: all ease 0.8s;
   transform: scale(1.2); }
 
-.modelos, .video {
+.c3 {
   display: flex;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  justify-content: space-evenly;
-  align-items: center; }
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  border: solid 4px grey; }
 
-.video iframe {
-  height: 300px;
-  width: 300px; }
+.img--c3 {
+  padding-top: 20px;
+  height: 200px;
+  width: 200px; }
+
+.c3 button a {
+  bottom: 50vh;
+  text-decoration: none;
+  color: white; }
 
 .form__modelos {
   display: flex;
@@ -195,17 +201,15 @@ button {
     display: flex;
     flex-flow: row wrap;
     list-style: none;
-    justify-content: space-around; } }
+    justify-content: space-around; }
+  .img--c3 {
+    height: 350px;
+    width: 400px; } }
 
 @media screen and (min-width: 992px) {
   .father {
     grid-template-columns: 0.8fr 4fr;
     grid-template-areas: "header header" "barra  barra" "menu   menu" "contenido contenido" "footer footer"; }
-  .video iframe {
-    width: 400px;
-    height: 250px;
-    display: flex;
-    float: right; }
   .ventas {
     display: flex;
     flex-flow: column wrap;
@@ -215,9 +219,6 @@ button {
   .ventas img {
     height: 250px;
     width: 400px; }
-  .footer {
-    display: flex;
-    justify-content: space-between; }
   .formu {
     display: flex;
     flex-direction: row; }
@@ -239,4 +240,14 @@ button {
     width: 100%; }
   .recuadro {
     width: 25%;
-    text-align: center; } }
+    text-align: center; }
+  .c3 {
+    flex-flow: row wrap;
+    justify-content: space-around; }
+  .img--c3 {
+    height: 400px;
+    width: 500px; }
+  .consultar {
+    padding-top: 40px;
+    justify-content: center;
+    align-content: center; } }
