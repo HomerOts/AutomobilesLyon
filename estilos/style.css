@@ -99,12 +99,6 @@ footer {
   padding-left: 5px;
   padding-right: 10px; }
 
-ul li a:hover {
-  display: flex;
-  background-color: #343f4b;
-  color: orange;
-  transition: 0.5s ease all; }
-
 .contenido {
   grid-area: contenido;
   text-align: center; }
@@ -144,6 +138,10 @@ button {
   transform: scale(1.2); }
 
 .c3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -249,5 +247,6 @@ button {
     width: 500px; }
   .consultar {
     padding-top: 40px;
+    padding-bottom: 25px;
     justify-content: center;
     align-content: center; } }
