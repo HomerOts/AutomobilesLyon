@@ -62,7 +62,7 @@ padding-top: 80px;
 
 .barra {
   background: rgb(255,241,241);
-  background: linear-gradient(229deg, rgba(255,241,241,1) 12%, rgba(0,0,0,1) 18%, rgba(232,116,194,1) 33%, rgba(5,33,184,1) 58%, rgba(233,121,8,1) 64%, rgba(223,8,8,1) 87%);
+  background-image: linear-gradient(229deg, rgba(255,241,241,1) 12%, rgba(0,0,0,1) 18%, rgba(232,116,194,1) 33%, rgba(5,33,184,1) 58%, rgba(233,121,8,1) 64%, rgba(223,8,8,1) 87%);
   color: white;
   font-family: 'Alegreya', serif;
   display: flex;
@@ -151,6 +151,10 @@ button {
 
 .img__form img {
   display: none;
+}
+
+.form-select{
+  margin-bottom: 15px;
 }
 
 .banner {

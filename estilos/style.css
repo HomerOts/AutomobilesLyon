@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
+.barra strong {
+  color: black; }
+
 * {
   padding: 0;
   margin: 0; }
@@ -9,7 +12,8 @@ body {
   flex-wrap: wrap;
   min-height: 100vh;
   font-family: 'Fira Sans Condensed', sans-serif;
-  background-color: white; }
+  background-color: white;
+  font-family: 'Lato', sans-serif; }
 
 header {
   background-color: white;
@@ -39,7 +43,8 @@ footer {
   color: white;
   height: 300px;
   padding-left: 20px;
-  padding-right: 20px; }
+  padding-right: 20px;
+  margin-top: 10px; }
   footer img {
     width: 30px;
     height: 30px;
@@ -89,7 +94,7 @@ footer {
 
 .barra {
   background: #fff1f1;
-  background: linear-gradient(229deg, #fff1f1 12%, black 18%, #e874c2 33%, #0521b8 58%, #e97908 64%, #df0808 87%);
+  background-image: linear-gradient(229deg, #fff1f1 12%, black 18%, #e874c2 33%, #0521b8 58%, #e97908 64%, #df0808 87%);
   color: white;
   font-family: 'Alegreya', serif;
   display: flex;
@@ -164,6 +169,9 @@ button {
 
 .img__form img {
   display: none; }
+
+.form-select {
+  margin-bottom: 15px; }
 
 .banner {
   width: 100%; }
