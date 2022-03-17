@@ -60,9 +60,14 @@ footer {
   padding-right: 20px;
   margin-top: 10px; }
   footer img {
-    width: 30px;
+    width: 40px;
     height: 30px;
-    padding-left: 10px; }
+    padding-left: 15px; }
+  footer .pie {
+    bottom: 0;
+    margin-top: auto;
+    padding-top: 5px;
+    text-align: right; }
 
 /*map*/
 .btn--whatsapp {
@@ -215,6 +220,15 @@ button {
 .servicios img {
   height: 200px;
   width: 200px; }
+
+.sucursales {
+  display: flex;
+  flex-flow: column nowrap; }
+
+.sucursales a {
+  text-decoration: none;
+  color: white;
+  padding-top: 15px; }
 
 @media screen and (min-width: 576px) {
   .menu {

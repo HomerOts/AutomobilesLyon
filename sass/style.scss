@@ -192,7 +192,16 @@ button {
   width: 200px;
 }
 
+.sucursales{
+  display: flex;
+  flex-flow: column nowrap;
+}
 
+.sucursales a{
+  text-decoration: none;
+  color: white;
+  padding-top: 15px;
+}
 
 @media screen and (min-width: 576px) {
 
