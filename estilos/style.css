@@ -1,6 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 .barra strong {
   color: black; }
+
+.father {
+  font-family: 'Lato', sans-serif; }
+
+.barra strong {
+  color: black; }
+
+.father {
+  font-family: 'Lato', sans-serif; }
 
 * {
   padding: 0;
@@ -254,6 +268,11 @@ button {
     height: 400px;
     width: 500px; }
   .consultar {
+    padding-top: 120px;
+    padding-bottom: 25px;
+    justify-content: center;
+    align-content: center; }
+  .consultar1 {
     padding-top: 40px;
     padding-bottom: 25px;
     justify-content: center;
