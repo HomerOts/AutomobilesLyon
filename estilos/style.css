@@ -261,8 +261,6 @@ button {
   background-color: rgba(20, 20, 153, 0.932); }
 
 @media screen and (min-width: 576px) {
-  .father {
-    font-size: 22px; }
   .menu {
     display: flex;
     flex-flow: row wrap;
