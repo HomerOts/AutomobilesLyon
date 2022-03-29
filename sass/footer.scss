@@ -1,24 +1,65 @@
 footer {
-    grid-area: footer;
-    background: rgb(255,241,241);
-    background: linear-gradient(229deg, rgba(255,241,241,1) 12%, rgba(0,0,0,1) 18%, rgba(232,116,194,1) 33%, rgba(5,33,184,1) 58%, rgba(233,121,8,1) 64%, rgba(223,8,8,1) 87%);
-    padding: 1em;
+  grid-area: footer;
+  background: rgb(255, 241, 241);
+  background-color: rgba(20, 20, 153, 0.932);
+  padding: 1em;
+  bottom: 0;
+  margin-top: auto;
+  color: white;
+  height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+
+  .pie {
     bottom: 0;
+    margin-bottom: 5px;
     margin-top: auto;
-    color: white;
-    height: 320px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 10px;
-    img {
-        width: 40px;
-        height: 30px;
-        padding-left: 15px;
+    padding-top: 60px;
+    text-align: center;
+  }
+
+  .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .icons {
+      display: flex;
+      flex-direction: column;
+      .icon--list {
+        flex-direction: row;
+        ul{
+          flex-direction: row;
+            li {
+              list-style: none;
+              display: inline-block;
+              padding-right: 20px;
+              a{
+                
+                i{
+                  color: white;
+                }
+              }
+          }
+          
+
+
+
+        }
       }
-      .pie{
-        bottom: 0;
-        margin-top: auto;
-        padding-top: 1px;
-        text-align: right;
-      }
+
+
+    }
+  }
+  .sucursales{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    a{
+      text-decoration: none;
+      color: white;
+      padding-top: 15px;
+    }
+  }
 }
