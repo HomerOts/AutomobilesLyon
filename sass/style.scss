@@ -18,14 +18,13 @@ $map:(
     }
 }
 
-.redes{
+.redes1{
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
   color: white;
   padding-bottom: 0vh;
   text-align: center;
-
+  flex-direction: column;
+  justify-content: center;
 }
 
 
@@ -233,6 +232,7 @@ button {
   width: 300px;
 }
 
+
 }
 
 
@@ -306,7 +306,10 @@ button {
     height: 400px;
     width: 500px;
 }
-
+.redes1{
+flex-flow: row wrap;
+  justify-content: space-between;
+}
 .footer{
   height: 60vh;
   width: 100%;

@@ -93,13 +93,13 @@ footer {
   background-color: #ee0134;
   color: white; }
 
-.redes {
+.redes1 {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
   color: white;
   padding-bottom: 0vh;
-  text-align: center; }
+  text-align: center;
+  flex-direction: column;
+  justify-content: center; }
 
 /*Mixin*/
 .form {
@@ -308,6 +308,9 @@ button {
   .img--c3 {
     height: 400px;
     width: 500px; }
+  .redes1 {
+    flex-flow: row wrap;
+    justify-content: space-between; }
   .footer {
     height: 60vh;
     width: 100%; }
