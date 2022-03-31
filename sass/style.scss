@@ -24,20 +24,10 @@ $map:(
   justify-content: space-between;
   color: white;
   padding-bottom: 0vh;
+  text-align: center;
 
 }
 
-.quienes{
-  padding-top: 20px;
-}
-.quienes img{
-  padding-top: 20px;
-  height:250px;
-  width: 400px;
-}
-.seguinos h4{
-padding-top: 80px;
-}
 
 /*Mixin*/
 
@@ -55,13 +45,13 @@ padding-top: 80px;
 
 /*Contenido*/
 .header:hover {
-  background-color: rgba(20, 20, 153, 0.932);
+  background-color: #2d5fa8;
   color: white;
 }
 
 .barra {
   background: rgb(255,241,241);
-  background-color: rgba(20, 20, 153, 0.932);
+  background-color: #2d5fa8;
   color: white;
   font-family: 'Alegreya', serif;
   display: flex;
@@ -129,7 +119,7 @@ button {
   flex-flow: column wrap;
   justify-content: center;
   align-content: center;
-  border: solid 4px rgba(20, 20, 153, 0.932);
+  border: solid 4px #2d5fa8;
 }
 .img--c3{
   padding-top: 20px;
@@ -177,13 +167,13 @@ button {
 }
 
 .recuadro {
-  border: solid 2px rgba(20, 20, 153, 0.932);
+  border: solid 2px #2d5fa8;
   padding-bottom: 20px;
   padding-top: 20px;
   padding-left: 5px;
 }
 .recuadro button{
-  background-color: rgba(20, 20, 153, 0.932);
+  background-color: #2d5fa8;
 }
 .recuadro button a{
   text-decoration: none;
@@ -207,7 +197,7 @@ button {
   align-content: center;
 }
 .consultar button{
-  background-color: rgba(20, 20, 153, 0.932);
+  background-color: #2d5fa8;
 }
 
 .consultar1{
@@ -217,7 +207,7 @@ button {
   align-content: center;
 }
 .form button{
-  background-color: rgba(20, 20, 153, 0.932);
+  background-color: #2d5fa8;
 }
 
 @media screen and (min-width: 576px) {
@@ -236,6 +226,11 @@ button {
 
 .footer{
   height: 70vh;
+}
+.quienes img{
+  padding-top: 20px;
+  height:200px;
+  width: 300px;
 }
 
 }
@@ -314,9 +309,18 @@ button {
 
 .footer{
   height: 60vh;
+  width: 100%;
 }
 
-
+.quienes img{
+  padding-top: 20px;
+  height:250px;
+  width: 400px;
+}
+.sucursales{
+  flex-flow: row nowrap;
+  padding-top: 15vh;
+}
 
 }
 

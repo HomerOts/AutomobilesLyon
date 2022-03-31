@@ -1,22 +1,33 @@
 footer {
   grid-area: footer;
-  background: rgb(255, 241, 241);
-  background-color: rgba(20, 20, 153, 0.932);
+  background-color: #2d5fa8;
   padding: 1em;
   bottom: 0;
   margin-top: auto;
   color: white;
-  height: 100vh;
+  height: 110vh;
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 10px;
 
+  .sucursales{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+      a{
+      text-decoration: none;
+      color: white;
+      padding-top: 40px;
+      }
+  }
+  
   .pie {
     bottom: 0;
     margin-bottom: 5px;
     margin-top: auto;
     padding-top: 60px;
     text-align: center;
+    font-size: 10px;
   }
 
   .redes {
@@ -52,14 +63,5 @@ footer {
 
     }
   }
-  .sucursales{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    a{
-      text-decoration: none;
-      color: white;
-      padding-top: 15px;
-    }
-  }
+
 }

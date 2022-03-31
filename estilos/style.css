@@ -38,22 +38,30 @@ header {
 
 footer {
   grid-area: footer;
-  background: #fff1f1;
-  background-color: rgba(20, 20, 153, 0.932);
+  background-color: #2d5fa8;
   padding: 1em;
   bottom: 0;
   margin-top: auto;
   color: white;
-  height: 100vh;
+  height: 110vh;
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 10px; }
+  footer .sucursales {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    footer .sucursales a {
+      text-decoration: none;
+      color: white;
+      padding-top: 40px; }
   footer .pie {
     bottom: 0;
     margin-bottom: 5px;
     margin-top: auto;
     padding-top: 60px;
-    text-align: center; }
+    text-align: center;
+    font-size: 10px; }
   footer .redes {
     display: flex;
     flex-direction: row;
@@ -71,14 +79,6 @@ footer {
             padding-right: 20px; }
             footer .redes .icons .icon--list ul li a i {
               color: white; }
-  footer .sucursales {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between; }
-    footer .sucursales a {
-      text-decoration: none;
-      color: white;
-      padding-top: 15px; }
 
 /*map*/
 .btn--whatsapp {
@@ -98,18 +98,8 @@ footer {
   flex-flow: row wrap;
   justify-content: space-between;
   color: white;
-  padding-bottom: 0vh; }
-
-.quienes {
-  padding-top: 20px; }
-
-.quienes img {
-  padding-top: 20px;
-  height: 250px;
-  width: 400px; }
-
-.seguinos h4 {
-  padding-top: 80px; }
+  padding-bottom: 0vh;
+  text-align: center; }
 
 /*Mixin*/
 .form {
@@ -119,12 +109,12 @@ footer {
 
 /*Contenido*/
 .header:hover {
-  background-color: rgba(20, 20, 153, 0.932);
+  background-color: #2d5fa8;
   color: white; }
 
 .barra {
   background: #fff1f1;
-  background-color: rgba(20, 20, 153, 0.932);
+  background-color: #2d5fa8;
   color: white;
   font-family: 'Alegreya', serif;
   display: flex;
@@ -181,7 +171,7 @@ button {
   flex-flow: column wrap;
   justify-content: center;
   align-content: center;
-  border: solid 4px rgba(20, 20, 153, 0.932); }
+  border: solid 4px #2d5fa8; }
 
 .img--c3 {
   padding-top: 20px;
@@ -220,13 +210,13 @@ button {
   margin-right: 5px; }
 
 .recuadro {
-  border: solid 2px rgba(20, 20, 153, 0.932);
+  border: solid 2px #2d5fa8;
   padding-bottom: 20px;
   padding-top: 20px;
   padding-left: 5px; }
 
 .recuadro button {
-  background-color: rgba(20, 20, 153, 0.932); }
+  background-color: #2d5fa8; }
 
 .recuadro button a {
   text-decoration: none;
@@ -249,7 +239,7 @@ button {
   align-content: center; }
 
 .consultar button {
-  background-color: rgba(20, 20, 153, 0.932); }
+  background-color: #2d5fa8; }
 
 .consultar1 {
   padding-top: 40px;
@@ -258,7 +248,7 @@ button {
   align-content: center; }
 
 .form button {
-  background-color: rgba(20, 20, 153, 0.932); }
+  background-color: #2d5fa8; }
 
 @media screen and (min-width: 576px) {
   .menu {
@@ -270,7 +260,11 @@ button {
     height: 350px;
     width: 400px; }
   .footer {
-    height: 70vh; } }
+    height: 70vh; }
+  .quienes img {
+    padding-top: 20px;
+    height: 200px;
+    width: 300px; } }
 
 @media screen and (min-width: 992px) {
   .father {
@@ -315,4 +309,12 @@ button {
     height: 400px;
     width: 500px; }
   .footer {
-    height: 60vh; } }
+    height: 60vh;
+    width: 100%; }
+  .quienes img {
+    padding-top: 20px;
+    height: 250px;
+    width: 400px; }
+  .sucursales {
+    flex-flow: row nowrap;
+    padding-top: 15vh; } }
