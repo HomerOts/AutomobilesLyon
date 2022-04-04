@@ -50,7 +50,8 @@ footer {
   footer .sucursales {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding-top: 20px; }
     footer .sucursales a {
       text-decoration: none;
       color: white;
@@ -325,4 +326,6 @@ button {
     width: 400px; }
   .sucursales {
     flex-flow: row nowrap;
-    padding-top: 15vh; } }
+    padding-top: 15vh; }
+  .phone {
+    text-align: center; } }
