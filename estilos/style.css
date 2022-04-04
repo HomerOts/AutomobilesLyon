@@ -250,6 +250,11 @@ button {
 .form button {
   background-color: #2d5fa8; }
 
+.quienes img {
+  padding-top: 20px;
+  height: 180px;
+  width: 250px; }
+
 @media screen and (min-width: 576px) {
   .menu {
     display: flex;
